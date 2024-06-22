@@ -1,0 +1,55 @@
+/* General body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Set the font family for the entire page */
+    background-color: #f8f8f8; /* Light grey background */
+    margin: 10; /* Set the margin around the body */
+    padding: 10; /* Set the padding inside the body */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    min-height: 50vh; /* Minimum height of 50% of the viewport height */
+}
+
+/* Heading styles */
+h1 {
+    color: #333; /* Dark grey text */
+    font-size: 36px; /* Font size of 36 pixels */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* List styles */
+ul {
+    list-style-type: none; /* Remove default list style (bullets) */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    margin: 10px 0; /* Vertical margin of 10 pixels between list items */
+}
+
+/* Link styles */
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007BFF; /* Blue text color for links */
+    font-size: 24px; /* Font size of 24 pixels */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue color when hovering over links */
+}
+
+/* Image styles */
+img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Specific styles for the kebap image */
+.kebap-image, .doner-image {
+    max-width: 600px; /* Limit the maximum width */
+    width: 100%; /* Ensure the image scales responsively */
+    height: auto; /* Maintain aspect ratio */
+}

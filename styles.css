@@ -1,9 +1,16 @@
+/* Reset styles for consistency across browsers */
+* {
+    margin: 2;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
 /* General body styles */
 body {
     font-family: Arial, Helvetica, sans-serif; /* Set the font family for the entire page */
     background-color: #f8f8f8; /* Light grey background */
-    margin: 10; /* Set the margin around the body */
-    padding: 10; /* Set the padding inside the body */
+    margin: 10px; /* Set the margin around the body */
+    padding: 10px; /* Set the padding inside the body */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items in a column */
     align-items: center; /* Center items horizontally */
@@ -22,10 +29,25 @@ h1 {
 ul {
     list-style-type: none; /* Remove default list style (bullets) */
     padding: 0; /* Remove default padding */
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Maximum width for the list */
+    background: #fff; /* White background for the list */
+    border: 1px solid #ccc; /* Border around the list */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* List item styles */
 li {
     margin: 10px 0; /* Vertical margin of 10 pixels between list items */
+    padding: 10px; /* Padding inside each list item */
+    border-bottom: 1px solid #eee; /* Border between list items */
+    display: flex;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border from the last item */
 }
 
 /* Link styles */
@@ -33,6 +55,8 @@ a {
     text-decoration: none; /* Remove underline from links */
     color: #007BFF; /* Blue text color for links */
     font-size: 24px; /* Font size of 24 pixels */
+    display: flex;
+    align-items: center;
 }
 
 a:hover {
@@ -44,10 +68,10 @@ img {
     max-width: 100%; /* Responsive image */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Rounded corners */
-    margin-bottom: 20px; /* Space below the image */
+    margin-right: 10px; /* Space between image and text */
 }
 
-/* Specific styles for the kebap image */
+/* Specific styles for kebap and doner images */
 .kebap-image, .doner-image {
     max-width: 600px; /* Limit the maximum width */
     width: 100%; /* Ensure the image scales responsively */
